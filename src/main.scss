@@ -1,0 +1,31 @@
+@import './lib/reset.scss';
+
+html,body,.container {
+    @include rect(100%, 100%);
+}
+
+html{
+    @include root-scroll();
+}
+
+.container {
+    @include flexbox();
+    @include flex-direction(column);
+    header{
+        @include rect(100%, 0.45rem);
+        @include background-color(#f66);
+        @include font-size(0.16rem);
+        @include text-color(#fff);
+    }
+    .content{
+        @include flex();
+        @include rect(100%, auto);
+        @include background-color(#eee);
+        @include overflow(auto);
+        
+    }
+    footer{
+        @include rect(100%, 0.5rem);
+        @include background-color(#ccc);
+    }
+}

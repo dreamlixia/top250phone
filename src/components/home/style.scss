@@ -1,0 +1,5 @@
+@import '@/lib/reset.scss';
+
+.mint-swipe{
+    @include rect(100%, 1.5rem);
+}
