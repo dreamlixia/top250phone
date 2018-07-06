@@ -25,6 +25,8 @@ import Login from '@/components/user/login/index.vue'
 import Register from '@/components/register/index.vue'
 import MainFooter from '@/components/mainfooter/index.vue'
 
+import Logining from '@/components/logining/index.vue'//登录页
+
 Vue.use(Router)
 
 // 3.定义路由规则
@@ -110,6 +112,12 @@ const routes = [
 		path: '/register',
 		components: {
 			content: Register
+		}
+	},
+	{//登录页
+		path: '/logining',
+		components: {
+			content: Logining
 		}
 	}
 ]
